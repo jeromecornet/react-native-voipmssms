@@ -2,7 +2,7 @@ import {
   AppRegistry,
 } from 'react-native';
 
-import ChatScene from './ChatScene';
+import VoipMSSMS from './VoipMSSMS';
 
-AppRegistry.registerComponent('GiftedChat', () => ChatScene);
-AppRegistry.registerComponent('VoipMSSMS', () => ChatScene);
+AppRegistry.registerComponent('GiftedChat', () => VoipMSSMS);
+AppRegistry.registerComponent('VoipMSSMS', () => VoipMSSMS);

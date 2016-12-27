@@ -1,15 +1,22 @@
+import Contact from '../models/Contact';
+
+var contactDb = new Contact();
+
 export default class Message {
 
-  toGiftedMessage() {
-    user = { _id: this.contact, name: this.contact};
+  toGiftedMessage(user, db) {
+    if (user == null) {
+      user = db.getContact(this.contact);
+    };
     you = { _id: 1, name: "You"};
      return {
        _id: this.id,
        text: this.message,
        user: (this.type == '0' ? you : user),
-       date: this.date
+       createdAt: this.date
      }
   }
+
 }
 
 Message.schema = {
