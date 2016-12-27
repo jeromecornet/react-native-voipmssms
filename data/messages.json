@@ -1,0 +1,20 @@
+module.exports = [
+  {
+    text: 'Yes, and I use Gifted Chat!',
+    createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+    user: {
+      name: 'Developer',
+    },
+    location: {
+      latitude: 48.864601,
+      longitude: 2.398704
+    },
+  },
+  {
+    text: 'Are you building a chat app?',
+    createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+    user: {
+      name: 'React Native',
+    },
+  },
+];
